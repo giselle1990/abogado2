@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salir de Veraz</title>
+</head>
+<body>
+    <h1>Quiero salir de Veraz</h1>
+    <form method="post" action="{% url 'salir_de_veraz' %}">
+        {% csrf_token %}
+        <!-- Puedes agregar campos del formulario según sea necesario -->
+        <button type="submit">Enviar solicitud</button>
+    </form>
+</body>
+</html>
